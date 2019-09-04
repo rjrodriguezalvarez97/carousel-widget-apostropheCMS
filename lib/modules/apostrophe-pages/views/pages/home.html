@@ -9,6 +9,13 @@
 
 {% block main %}
   <main>
-    {{ utils.columns() }}
+   
+    {{ apos.area(data.page, 'carousel',{
+      widgets: {
+        'product': {},
+        'apostrophe-rich-text': {}
+      }
+    })}}
+
   </main>
 {% endblock %}

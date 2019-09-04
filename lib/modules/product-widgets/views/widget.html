@@ -1,0 +1,19 @@
+
+
+
+<div class="owl-carousel owl-theme">
+    {% for product in data.widget._products %}
+        {% set image = apos.images.first(product.image) %}
+        
+    <div class="carousel-product-element"> 
+        {% if image %}
+            <img src="{{ apos.attachments.url(image, { size: 'one-third' }) }}" />
+       
+            <p> {{ product.title }} </p>
+        {% endif %}
+        
+    </div> 
+    {% endfor %}
+
+
+</div>

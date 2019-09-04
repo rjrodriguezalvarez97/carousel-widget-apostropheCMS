@@ -33,11 +33,13 @@ var apos = require('apostrophe')({
     'three-column-widgets': {},
     'products': {},
     'products-pages': {},
+    'product-widgets': {},
     // People who specialize in various products
     'specialists': {},
     'specialists-pages': {},
     'theme': {},
     'test-widgets': {},
+    'prueba-widgets': {},
     'apostrophe-global': {
       addFields: [
         {
@@ -64,6 +66,6 @@ var apos = require('apostrophe')({
           ]
         }  
       ]
-    }
+    },
   }
 });

@@ -4,6 +4,10 @@
 
 {% block main %}
   <main>
-    {{ utils.columns() }}
+    {{apos.area('data.page', 'body',{
+      widgets: {
+        'product': {}
+      }
+    })}}
   </main>
 {% endblock %}

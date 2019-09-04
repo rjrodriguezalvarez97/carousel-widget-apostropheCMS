@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "apostrophe": "^2.47.0",
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "owl.carousel": "^2.3.4"
   },
   "nodemonConfig": {
     "verbose": true,
