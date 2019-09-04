@@ -38,8 +38,6 @@ var apos = require('apostrophe')({
     'specialists': {},
     'specialists-pages': {},
     'theme': {},
-    'test-widgets': {},
-    'prueba-widgets': {},
     'apostrophe-global': {
       addFields: [
         {
