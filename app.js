@@ -34,6 +34,7 @@ var apos = require('apostrophe')({
     'products': {},
     'products-pages': {},
     'product-widgets': {},
+    'product-page-exercise': {},
     // People who specialize in various products
     'specialists': {},
     'specialists-pages': {},

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+  <main>
+   <div class="banner-container"> 
+    <p> ¡ Estamos de rebajas ! 20% de descuento </p>
+   </div>
+   <div class="owl-carousel owl-theme">
+   
+    {% for product in data.products %}
+        {% set image =apos.images.first(product.image) %} 
+        {% if image %}
+
+        <div class="carousel-product-element">
+            <img src="{{ apos.attachments.url(image, { size: 'one-third' }) }}" />
+            <p>{{ product.title }}</p>
+            <p class="strikethrough">{{ product.price }}$</p>
+            <p class="discounted-price"> {{product.price - (0.2 * product.price)}}$ </span>
+        </div>
+
+        {% endif %} 
+        
+
+    {% endfor %}
+
+   </div>
+  </main>
+{% endblock %}
